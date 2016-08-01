@@ -1,0 +1,33 @@
+{% extends 'ventos/base.html' %}
+<!-- Upload form. Note enctype attribute! -->
+{% block content %}
+    <div>
+    <form action="{% url 'scheduler:addreg' %}" method="post" enctype="multipart/form-data" role="form"> 
+        {% csrf_token %}
+        <p>{{ form.non_field_errors }}</p>
+        {% if form.errors %}
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <p> {{ errors }} </p>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+        <div class="form-group">
+            {{ form.name.label }}
+             {{ form.name }} 
+        </div>
+
+        <div class="form-group">
+        {{ form.regdocfile.label}} 
+        {{ form.regdocfile }}
+        </div>
+        <div class="form-group">
+            {{form.buildingchoices.label }}
+            {{ form.buildingchoices }}
+        </div>
+                </p>
+        <p><input type="submit" value="Upload" class="save btn btn-default" /></p>
+     </form>
+     <!-- List of uploaded documents -->
+    </div>
+    {% endblock %}

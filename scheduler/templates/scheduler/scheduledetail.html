@@ -1,0 +1,31 @@
+{% extends 'ventos/base.html' %}
+{% block content %}
+<div>
+    <form action="{% url 'scheduler:scheduledetail' buildid %}" method="post" enctype="multipart/form-data" role="form"> 
+        {% csrf_token %}
+        {{ formset.non_form_errors }}
+        <table class="table">
+            <thead>
+                {% for form in formset.forms %}
+                {% if forloop.first %}
+                {% for field in form %}
+                <th>{{ field.label_tag }}</th>
+                {% endfor %}
+                {% endif %}
+            </thead>
+            <tbody>
+            <tr>
+                {% for field in form %}
+                <td>{{ field }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {{ formset.management_form }}
+
+        <p><input type="submit" value="Schedule It!" class="save btn btn-default" /></p>
+    </form>
+    <!-- List of uploaded documents -->
+</div>
+{% endblock %}

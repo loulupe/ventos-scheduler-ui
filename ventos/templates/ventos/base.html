@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+<head>
+<link href="{% static  "images/ventos_icon.ico" %}" rel="ventos icon">
+<title>VentOS</title>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+<div class="page-header text-center">
+
+    <img src="{% static "/images/Ventos.png" %}" alt=""/>
+    <h1>VENTOS - Scheduler</h1>
+</div>
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+        {% block content%}
+        {% endblock %}
+    </div>
+    </div>
+</div>
+</body>
+</html>
