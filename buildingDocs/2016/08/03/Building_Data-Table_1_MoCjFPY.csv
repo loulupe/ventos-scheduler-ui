@@ -1,0 +1,10 @@
+Building,Room,Facility Id,Capacity,Type,Acad Org,Assignment,Partition,Location,Area sqft,Max Occup,Room Name,Space Category,System,VAV,IND UNIT,Pres/Co2 Boost,Occupied active cfm,Occupied Idle cfm,Unoccupied min cfm
+Golisano Institute of Sustainability,1130,081-1130,68,AUD,GIS,N,,MAIN,1765,69,AUDITORIUM,Auditorium,ERV-01,81-VAV-0343,"81-IND-0343-105,106,107,108",,,,
+Golisano Institute of Sustainability,2140,081-2140,30,LCTR,GIS,N,,MAIN,819,31,CLASSROOM ,Lecture classroom,AHU-03,81-VAV-0326,"81-IND-0326-61,62",702,550,293,0
+Golisano Institute of Sustainability,2240,081-2240,40,CMLB,GIS,N,,MAIN,1655,41,DECISION THEATER,Computer Lab,AHU-03,81-VAV-0333,"81-IND-0333-77,78,79,80",1339,1116,558,0
+Golisano Institute of Sustainability,3140,081-3140,30,GPCL,GIS,N,,MAIN,751,31,CLASSROOM 'C' ,Lecture classroom,AHU-03,81-VAV-0306,"81-IND-0306-18,19",708,590,295,0
+Golisano Institute of Sustainability,3150,081-3150,24,GPCL,GIS,N,,MAIN,700,25,CLASSROOM 'B' ,Lecture classroom,AHU-03,81-VAV-0305,"81-IND-0305-16,17",720,600,300,0
+Golisano Institute of Sustainability,3160,081-3160,30,GPCL,GIS,N,,MAIN,783,31,CLASSROOM 'A',Lecture classroom,AHU-03,81-VAV-0304,"81-IND-0304-14,15",708,590,295,0
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
